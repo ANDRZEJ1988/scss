@@ -1,0 +1,19 @@
+$heightHeader: 768px;
+$urlName: url("../img/header_background_v1.jpg");
+$widthElementFull: 100%;
+$widthButton: 150px;
+$marginTopNAv: 20px;
+$colorText: white;
+$colorBack: mediumturquoise;
+$colorH3: rgba(33, 173, 165, 0.99);
+$colorDecorate: red;
+$colorBackArticle: rgba(232, 232, 232, 0.76);
+$colorP: black;
+$paddingButton: 15px;
+$borderBottom: solid 2px rgba(149, 149, 149, 0.88);
+
+@mixin displayContent($arg1, $arg2, $arg3){
+  display: $arg1;
+  flex-wrap: $arg2;
+  justify-content: $arg3;
+};

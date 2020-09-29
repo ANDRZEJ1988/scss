@@ -1,0 +1,186 @@
+// Write your styles here
+
+button {
+  width: $widthButton;
+  background-color: $colorBack;
+  text-align: center;
+  padding: $marginTopNAv;
+  color: $colorText;
+  border: none;
+  text-transform: uppercase;
+  margin: 0 0 0 auto;
+
+  article & {
+    float: right;
+  }
+}
+
+h1 {
+  text-transform: uppercase;
+
+  .post-list & {
+    margin: 20px 0 0 auto;
+  }
+
+  .about & {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .contact-form & {
+    @include displayContent(flex, nowrap, flex-end);
+    margin-bottom: 0;
+  }
+}
+
+img {
+  width: $widthElementFull*0.3;
+
+  .about & {
+    width: $widthElementFull;
+  }
+}
+
+header {
+  @include displayContent(flex, wrap, normal);
+  background: $urlName;
+  height: 100vh;
+  background-size: cover;
+
+  .top-wrapper {
+    width: $widthElementFull;
+    @include displayContent(flex, nowrap, space-between);
+
+    .logo {
+      width: $widthElementFull*0.5;
+    }
+
+    nav {
+      width: $widthElementFull*0.5;
+      @include displayContent(flex, nowrap, space-around);
+      margin-top: $marginTopNAv;
+
+      a {
+        color: $colorText;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
+
+  section {
+    width: $widthElementFull;
+    @include displayContent(flex, wrap, normal);
+    flex-direction: column;
+    align-items: center;
+    color: $colorText;
+
+    .btn-top {
+      width: $widthButton;
+      background-color: $colorBack;
+      text-align: center;
+      padding: $paddingButton;
+      color: $colorText;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+main {
+  @include displayContent(flex, wrap, space-around);
+
+  .toolbar {
+    @include displayContent(flex, nowrap, flex-end);
+    width: $widthElementFull*0.8;
+    margin-top: $marginTopNAv;
+  }
+
+  .post-list {
+    color: $colorP;
+    width: $widthElementFull*0.8;
+    @include displayContent(flex, wrap, normal);
+
+    article {
+      width: $widthElementFull;
+      background-color: $colorBackArticle;
+      display: flex;
+      margin-bottom: $marginTopNAv;
+      padding: $marginTopNAv*0.5;
+
+      .post {
+        margin-left: $marginTopNAv*0.5;
+
+        .post-description {
+          color: $colorDecorate;
+          padding-bottom: $marginTopNAv*0.5;
+          border-bottom: $borderBottom;
+        }
+
+        h3 {
+          color: $colorH3;
+          margin: 0;
+        }
+
+        P {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .about {
+    width: $widthElementFull*0.8;
+    color: $colorP;
+    @include displayContent(flex, wrap, normal);
+
+    p {
+      margin-bottom: $marginTopNAv;
+    }
+  }
+
+  .contact-form {
+    width: $widthElementFull*0.8;
+    color: $colorP;
+
+    h4 {
+      @include displayContent(flex, nowrap, flex-end);
+      margin-top: 0;
+    }
+
+    form {
+      @include displayContent(flex, wrap, normal);
+      color: $colorH3;
+
+      p {
+        @include displayContent(flex, nowrap, flex-end);
+        margin-bottom: 0;
+      }
+
+      .box {
+        width: $widthElementFull;
+        @include displayContent(flex, nowrap, space-between);
+
+        .forms {
+          width: $widthElementFull*0.5-1%;
+
+          input {
+            width: $widthElementFull;
+            height: 40px;
+          }
+        }
+      }
+
+      .forms-question {
+        width: $widthElementFull;
+
+        textarea {
+          width: $widthElementFull;
+        }
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,180 @@
+button {
+  width: 150px;
+  background-color: mediumturquoise;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  margin: 0 0 0 auto;
+}
+article button {
+  float: right;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+.post-list h1 {
+  margin: 20px 0 0 auto;
+}
+.about h1 {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-form h1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+
+img {
+  width: 30%;
+}
+.about img {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: normal;
+  background: url("../img/header_background_v1.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+header .top-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+header .top-wrapper .logo {
+  width: 50%;
+}
+header .top-wrapper nav {
+  width: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+header .top-wrapper nav a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: normal;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+header section .btn-top {
+  width: 150px;
+  background-color: mediumturquoise;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main .toolbar {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  width: 80%;
+  margin-top: 20px;
+}
+main .post-list {
+  color: black;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: normal;
+}
+main .post-list article {
+  width: 100%;
+  background-color: rgba(232, 232, 232, 0.76);
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+main .post-list article .post {
+  margin-left: 10px;
+}
+main .post-list article .post .post-description {
+  color: red;
+  padding-bottom: 10px;
+  border-bottom: solid 2px rgba(149, 149, 149, 0.88);
+}
+main .post-list article .post h3 {
+  color: rgba(33, 173, 165, 0.99);
+  margin: 0;
+}
+main .post-list article .post P {
+  margin: 0;
+}
+main .about {
+  width: 80%;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: normal;
+}
+main .about p {
+  margin-bottom: 20px;
+}
+main .contact-form {
+  width: 80%;
+  color: black;
+}
+main .contact-form h4 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  margin-top: 0;
+}
+main .contact-form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: normal;
+  color: rgba(33, 173, 165, 0.99);
+}
+main .contact-form form p {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+main .contact-form form .box {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+main .contact-form form .box .forms {
+  width: 49%;
+}
+main .contact-form form .box .forms input {
+  width: 100%;
+  height: 40px;
+}
+main .contact-form form .forms-question {
+  width: 100%;
+}
+main .contact-form form .forms-question textarea {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
