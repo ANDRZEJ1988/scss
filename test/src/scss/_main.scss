@@ -1,11 +1,10 @@
 // Write your styles here
 
 button {
-  width: $widthButton;
+  @include widthColor($widthButton, $colorText);
   background-color: $colorBack;
   text-align: center;
   padding: $marginTopNAv;
-  color: $colorText;
   border: none;
   text-transform: uppercase;
   margin: 0 0 0 auto;
@@ -69,15 +68,15 @@ header {
   }
 
   section {
-    width: $widthElementFull;
+    //width: $widthElementFull;
+    //color: $colorText;
+    @include widthColor($widthElementFull, $colorText);
     @include displayContent(flex, wrap, normal);
     flex-direction: column;
     align-items: center;
-    color: $colorText;
 
     .btn-top {
-      width: $widthButton;
-      background-color: $colorBack;
+      @include widthColor($widthButton, $colorBack);
       text-align: center;
       padding: $paddingButton;
       color: $colorText;
@@ -97,13 +96,13 @@ main {
   }
 
   .post-list {
-    color: $colorP;
-    width: $widthElementFull*0.8;
+    @include widthColor($widthElementFull*0.8, $colorP);
     @include displayContent(flex, wrap, normal);
 
     article {
       width: $widthElementFull;
       background-color: $colorBackArticle;
+
       display: flex;
       margin-bottom: $marginTopNAv;
       padding: $marginTopNAv*0.5;
@@ -130,8 +129,7 @@ main {
   }
 
   .about {
-    width: $widthElementFull*0.8;
-    color: $colorP;
+    @include widthColor($widthElementFull*0.8, $colorP);
     @include displayContent(flex, wrap, normal);
 
     p {
@@ -140,8 +138,7 @@ main {
   }
 
   .contact-form {
-    width: $widthElementFull*0.8;
-    color: $colorP;
+    @include widthColor($widthElementFull*0.8, $colorP);
 
     h4 {
       @include displayContent(flex, nowrap, flex-end);

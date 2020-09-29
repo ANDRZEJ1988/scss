@@ -1,9 +1,9 @@
 button {
   width: 150px;
+  color: white;
   background-color: mediumturquoise;
   text-align: center;
   padding: 20px;
-  color: white;
   border: none;
   text-transform: uppercase;
   margin: 0 0 0 auto;
@@ -67,16 +67,16 @@ header .top-wrapper nav a {
 }
 header section {
   width: 100%;
+  color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: normal;
   flex-direction: column;
   align-items: center;
-  color: white;
 }
 header section .btn-top {
   width: 150px;
-  background-color: mediumturquoise;
+  color: mediumturquoise;
   text-align: center;
   padding: 15px;
   color: white;
@@ -97,8 +97,8 @@ main .toolbar {
   margin-top: 20px;
 }
 main .post-list {
-  color: black;
   width: 80%;
+  color: black;
   display: flex;
   flex-wrap: wrap;
   justify-content: normal;

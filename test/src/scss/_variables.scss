@@ -17,3 +17,7 @@ $borderBottom: solid 2px rgba(149, 149, 149, 0.88);
   flex-wrap: $arg2;
   justify-content: $arg3;
 };
+@mixin widthColor($arg1, $arg2){
+  width: $arg1;
+  color: $arg2;
+};
