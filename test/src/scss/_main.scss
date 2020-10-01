@@ -1,21 +1,35 @@
 // Write your styles here
+body {
+  margin: $bodyMargin;
+  padding: $bodyMargin;
+  font-family: $fontFamily;
+}
 
-button {
+.btn {
   @include widthColor($widthButton, $colorText);
   background-color: $colorBack;
   text-align: center;
   padding: $marginTopNAv;
   border: none;
-  text-transform: uppercase;
-  margin: 0 0 0 auto;
+  @include font(18px);
+  text-decoration: none;
 
   article & {
     float: right;
   }
+
+  &btn-top {
+    @include widthColor($widthButton, $colorBack);
+    color: $colorText;
+  }
+
+  form & {
+    margin: 0 0 0 auto;
+  }
 }
 
 h1 {
-  text-transform: uppercase;
+  @include font(26px);
 
   .post-list & {
     margin: 20px 0 0 auto;
@@ -45,10 +59,12 @@ header {
   background: $urlName;
   height: 100vh;
   background-size: cover;
+  @extend %bord;
 
   .top-wrapper {
     width: $widthElementFull;
     @include displayContent(flex, nowrap, space-between);
+    box-sizing: border-box;
 
     .logo {
       width: $widthElementFull*0.5;
@@ -58,71 +74,71 @@ header {
       width: $widthElementFull*0.5;
       @include displayContent(flex, nowrap, space-around);
       margin-top: $marginTopNAv;
+      box-sizing: border-box;
 
       a {
         color: $colorText;
-        text-transform: uppercase;
+        @include font(18px);
         text-decoration: none;
+        font-size: $fontA;
       }
     }
   }
 
   section {
-    //width: $widthElementFull;
-    //color: $colorText;
+    box-sizing: border-box;
     @include widthColor($widthElementFull, $colorText);
     @include displayContent(flex, wrap, normal);
     flex-direction: column;
     align-items: center;
-
-    .btn-top {
-      @include widthColor($widthButton, $colorBack);
-      text-align: center;
-      padding: $paddingButton;
-      color: $colorText;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
   }
 }
 
 main {
   @include displayContent(flex, wrap, space-around);
+  box-sizing: border-box;
 
   .toolbar {
     @include displayContent(flex, nowrap, flex-end);
     width: $widthElementFull*0.8;
     margin-top: $marginTopNAv;
+    box-sizing: border-box;
   }
 
   .post-list {
     @include widthColor($widthElementFull*0.8, $colorP);
     @include displayContent(flex, wrap, normal);
+    box-sizing: border-box;
 
     article {
       width: $widthElementFull;
       background-color: $colorBackArticle;
-
+      @extend %bord;
       display: flex;
       margin-bottom: $marginTopNAv;
       padding: $marginTopNAv*0.5;
 
       .post {
         margin-left: $marginTopNAv*0.5;
+        box-sizing: border-box;
 
         .post-description {
           color: $colorDecorate;
           padding-bottom: $marginTopNAv*0.5;
           border-bottom: $borderBottom;
+          font-size: $fontP;
+          box-sizing: border-box;
         }
 
         h3 {
           color: $colorH3;
           margin: 0;
+          text-transform: uppercase;
         }
 
         P {
           margin: 0;
+          font-size: $fontA;
         }
       }
     }
@@ -131,53 +147,66 @@ main {
   .about {
     @include widthColor($widthElementFull*0.8, $colorP);
     @include displayContent(flex, wrap, normal);
+    box-sizing: border-box;
 
     p {
       margin-bottom: $marginTopNAv;
+      font-size: $fontP;
     }
   }
 
   .contact-form {
     @include widthColor($widthElementFull*0.8, $colorP);
+    box-sizing: border-box;
 
     h4 {
       @include displayContent(flex, nowrap, flex-end);
       margin-top: 0;
+      text-transform: uppercase;
     }
 
     form {
       @include displayContent(flex, wrap, normal);
       color: $colorH3;
+      box-sizing: border-box;
 
       p {
         @include displayContent(flex, nowrap, flex-end);
         margin-bottom: 0;
+        font-size: $fontP;
       }
 
       .box {
         width: $widthElementFull;
         @include displayContent(flex, nowrap, space-between);
+        box-sizing: border-box;
 
         .forms {
           width: $widthElementFull*0.5-1%;
+          font-size: $fontP;
+          box-sizing: border-box;
 
           input {
             width: $widthElementFull;
             height: 40px;
+            box-sizing: border-box;
           }
         }
       }
 
       .forms-question {
         width: $widthElementFull;
+        box-sizing: border-box;
 
         textarea {
+          box-sizing: border-box;
           width: $widthElementFull;
         }
       }
     }
   }
 }
+
 
 
 

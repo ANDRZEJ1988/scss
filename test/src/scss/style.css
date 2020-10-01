@@ -1,4 +1,15 @@
-button {
+main .post-list article, header {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica";
+}
+
+.btn {
   width: 150px;
   color: white;
   background-color: mediumturquoise;
@@ -6,14 +17,26 @@ button {
   padding: 20px;
   border: none;
   text-transform: uppercase;
-  margin: 0 0 0 auto;
+  font-size: 18px;
+  font-style: normal;
+  text-decoration: none;
 }
-article button {
+article .btn {
   float: right;
+}
+.btnbtn-top {
+  width: 150px;
+  color: mediumturquoise;
+  color: white;
+}
+form .btn {
+  margin: 0 0 0 auto;
 }
 
 h1 {
   text-transform: uppercase;
+  font-size: 26px;
+  font-style: normal;
 }
 .post-list h1 {
   margin: 20px 0 0 auto;
@@ -49,6 +72,7 @@ header .top-wrapper {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 header .top-wrapper .logo {
   width: 50%;
@@ -59,13 +83,18 @@ header .top-wrapper nav {
   flex-wrap: nowrap;
   justify-content: space-around;
   margin-top: 20px;
+  box-sizing: border-box;
 }
 header .top-wrapper nav a {
   color: white;
   text-transform: uppercase;
+  font-size: 18px;
+  font-style: normal;
   text-decoration: none;
+  font-size: 18px;
 }
 header section {
+  box-sizing: border-box;
   width: 100%;
   color: white;
   display: flex;
@@ -74,20 +103,12 @@ header section {
   flex-direction: column;
   align-items: center;
 }
-header section .btn-top {
-  width: 150px;
-  color: mediumturquoise;
-  text-align: center;
-  padding: 15px;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-}
 
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  box-sizing: border-box;
 }
 main .toolbar {
   display: flex;
@@ -95,6 +116,7 @@ main .toolbar {
   justify-content: flex-end;
   width: 80%;
   margin-top: 20px;
+  box-sizing: border-box;
 }
 main .post-list {
   width: 80%;
@@ -102,6 +124,7 @@ main .post-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: normal;
+  box-sizing: border-box;
 }
 main .post-list article {
   width: 100%;
@@ -112,18 +135,23 @@ main .post-list article {
 }
 main .post-list article .post {
   margin-left: 10px;
+  box-sizing: border-box;
 }
 main .post-list article .post .post-description {
   color: red;
   padding-bottom: 10px;
   border-bottom: solid 2px rgba(149, 149, 149, 0.88);
+  font-size: 15px;
+  box-sizing: border-box;
 }
 main .post-list article .post h3 {
   color: rgba(33, 173, 165, 0.99);
   margin: 0;
+  text-transform: uppercase;
 }
 main .post-list article .post P {
   margin: 0;
+  font-size: 18px;
 }
 main .about {
   width: 80%;
@@ -131,49 +159,61 @@ main .about {
   display: flex;
   flex-wrap: wrap;
   justify-content: normal;
+  box-sizing: border-box;
 }
 main .about p {
   margin-bottom: 20px;
+  font-size: 15px;
 }
 main .contact-form {
   width: 80%;
   color: black;
+  box-sizing: border-box;
 }
 main .contact-form h4 {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-end;
   margin-top: 0;
+  text-transform: uppercase;
 }
 main .contact-form form {
   display: flex;
   flex-wrap: wrap;
   justify-content: normal;
   color: rgba(33, 173, 165, 0.99);
+  box-sizing: border-box;
 }
 main .contact-form form p {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-end;
   margin-bottom: 0;
+  font-size: 15px;
 }
 main .contact-form form .box {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 main .contact-form form .box .forms {
   width: 49%;
+  font-size: 15px;
+  box-sizing: border-box;
 }
 main .contact-form form .box .forms input {
   width: 100%;
   height: 40px;
+  box-sizing: border-box;
 }
 main .contact-form form .forms-question {
   width: 100%;
+  box-sizing: border-box;
 }
 main .contact-form form .forms-question textarea {
+  box-sizing: border-box;
   width: 100%;
 }
 

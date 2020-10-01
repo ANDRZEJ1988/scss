@@ -11,7 +11,14 @@ $colorBackArticle: rgba(232, 232, 232, 0.76);
 $colorP: black;
 $paddingButton: 15px;
 $borderBottom: solid 2px rgba(149, 149, 149, 0.88);
-
+$bodyMargin: 0;
+$fontA: 18px;
+$fontP: 15px;
+$fontFamily: "Helvetica";
+%bord{
+  box-sizing: border-box;
+  overflow: hidden;
+};
 @mixin displayContent($arg1, $arg2, $arg3){
   display: $arg1;
   flex-wrap: $arg2;
@@ -21,3 +28,9 @@ $borderBottom: solid 2px rgba(149, 149, 149, 0.88);
   width: $arg1;
   color: $arg2;
 };
+@mixin  font ($arg) {
+  text-transform: uppercase;
+  font-size: $arg;
+  font-style: normal;
+
+}
